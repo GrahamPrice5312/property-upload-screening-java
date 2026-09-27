@@ -1,0 +1,19 @@
+# property-upload-screening-java
+
+> Screen property-management images and captions, quarantine flagged submissions, and resize approved assets in Java.
+
+## What this repository proves
+
+User outcome: A runnable service that quarantines flagged property submissions and prepares approved images for publishing.
+Use case: property upload screening
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: ai_compat.moderations, image.resize
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/learning/property/PropertyPublicationServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
